@@ -308,7 +308,7 @@ export default function About() {
 
                 <div className="space-y-6 mt-6">
                   {/* Additional Info Cards Grid */}
-                  <div className="grid grid-cols-3 gap-3 text-left">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
                     {/* Location Card */}
                     <div className="about-info-item p-3.5 rounded-xl border border-white/10 bg-white/5 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_12px_rgba(0,0,0,0.5)] hover:-translate-y-1 hover:border-neon-pink/30 hover:bg-white/10 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_12px_24px_-8px_rgba(0,0,0,0.8),0_0_15px_rgba(255,159,28,0.1)] transition-all duration-300 group/info">
                       <span className="text-[9px] font-mono font-bold tracking-widest text-gray-400 group-hover/info:text-neon-pink transition-colors block uppercase">LOCATION</span>

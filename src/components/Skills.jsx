@@ -274,7 +274,7 @@ export default function Skills() {
               </div>
 
               {/* Bubbles Grid */}
-              <div className="flex flex-wrap gap-8 sm:gap-10 justify-start items-center pl-1">
+              <div className="flex flex-wrap gap-6 sm:gap-10 justify-center sm:justify-start items-center pl-1">
                 {cat.skills.map((skill, index) => (
                   <div 
                     key={skill.name} 

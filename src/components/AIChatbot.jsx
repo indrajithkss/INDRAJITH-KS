@@ -142,7 +142,7 @@ export default function AIChatbot() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 font-sans">
+    <div className="fixed bottom-4 right-4 sm:right-6 sm:bottom-6 z-50 font-sans flex flex-col items-end">
       {/* 1. Toggle Floating Button */}
       {!isOpen && (
         <div
@@ -183,7 +183,7 @@ export default function AIChatbot() {
 
       {/* 2. Glassmorphic Chat Container */}
       {isOpen && (
-        <div className="w-[330px] sm:w-[380px] h-[480px] rounded-2xl border border-white/10 liquid-glass shadow-2xl overflow-hidden flex flex-col animate-fade-in">
+        <div className="w-[calc(100vw-32px)] sm:w-[380px] h-[480px] max-h-[80vh] sm:max-h-none rounded-2xl border border-white/10 liquid-glass shadow-2xl overflow-hidden flex flex-col animate-fade-in">
 
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-black/90 border-b border-white/5 relative">

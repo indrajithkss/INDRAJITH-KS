@@ -229,10 +229,10 @@ export default function Hero({ isLoading }) {
 
           {/* Subheading / Roles */}
           <div className="space-y-1">
-            <p className="text-lg md:text-xl lg:text-2xl font-semibold tracking-wider text-white font-mono uppercase hero-fade hero-parallax-text">
+            <p className="text-sm md:text-lg lg:text-2xl font-semibold tracking-wider text-white font-mono uppercase hero-fade hero-parallax-text">
               Full-Stack Developer (MERN) | Mobile App Development | Data Science | IoT| MCA Graduate, JAIN University |
             </p>
-            <p className="text-lg md:text-xl lg:text-2xl font-semibold tracking-wider text-white font-mono uppercase hero-fade hero-parallax-text">Open to Opportunities  </p>
+            <p className="text-sm md:text-lg lg:text-2xl font-semibold tracking-wider text-white font-mono uppercase hero-fade hero-parallax-text">Open to Opportunities  </p>
           </div>
 
           {/* Action Buttons */}
@@ -267,7 +267,7 @@ export default function Hero({ isLoading }) {
       </div>
 
       {/* Far Right Corner Portrait */}
-      <div className="absolute right-0 bottom-0 h-[280px] sm:h-[380px] lg:h-[500px] xl:h-[580px] 2xl:h-[660px] select-none pointer-events-none z-10 flex items-end justify-end hero-portrait-container">
+      <div className="hidden lg:flex absolute right-0 bottom-0 lg:h-[500px] xl:h-[580px] 2xl:h-[660px] select-none pointer-events-none z-10 items-end justify-end hero-portrait-container">
         {/* Image Wrapper */}
         <div 
           ref={portraitRef} 

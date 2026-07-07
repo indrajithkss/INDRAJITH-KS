@@ -87,20 +87,38 @@ export default function Projects() {
     },
     {
       title: "JOBSCOUT AI",
-      tagline: "AI Resume Screen & Job Matcher",
-      description: "An automated career assistant utilizing Large Language Models to parse and analyze resumes. Matches candidate profiles against target job descriptions, scores compatibility, and suggests resume improvements alongside tailor-made mock interview questions.",
+      tagline: "AI-Powered Full-Stack Career Assistant",
+      description: "A full-stack AI career assistant designed to simplify the job search. It discovers relevant job opportunities, analyzes resume compatibility, recommends skills to learn, and manages applications through a modern dashboard.",
       image: "/assets/projects/jobscout-ai.png",
-      tags: ["React.js", "Python", "FastAPI", "OpenAI API", "Tailwind CSS"],
-      brandColor: "#10a37f", // OpenAI Green
+      tags: ["React.js", "Node.js", "Express", "Supabase", "Gemini AI"],
+      brandColor: "#10a37f", // Green
       codeLink: "https://github.com/indrajithkss/jobscout-ai",
       demoLink: "#",
       details: [
-        "Developed an AI-powered recruitment assistant utilizing Gemini and OpenAI models for resume screening.",
-        "Designed FastAPI endpoints to parse PDF and DOCX resume uploads and match candidate profiles against dynamic job descriptions.",
-        "Implemented a score match algorithm and suggested personalized interview preparation questions based on applicant weaknesses."
+        "Developed a full-stack AI career assistant utilizing React, Node.js, Express.js, and Supabase.",
+        "Integrated Google Gemini API for resume parsing, skill gap analysis, and tailored interview preparation topics.",
+        "Built an interactive analytics dashboard displaying career readiness scores and pipeline metrics.",
+        "Automated daily job discovery and scout execution using GitHub Actions."
       ]
     },
-
+   
+    {
+      title: "SIJI JOB CONSULTANCY",
+      tagline: "Full-Stack Workforce Management Platform",
+      description: "A comprehensive recruitment management system connecting workers, employers, and administrators. Features multi-role dashboards, automated placement workflows, secure document verification via Cloudinary, and analytics.",
+      image: "/assets/projects/siji-consultancy.png",
+      tags: ["React.js", "Node.js", "Express", "MongoDB", "Cloudinary", "JWT"],
+      brandColor: "#ffaa00", // Vibrant Orange
+      codeLink: "https://github.com/indrajithkss/siji-job-consultancy",
+      demoLink: "https://siji-job-consultancy.vercel.app/",
+      details: [
+        "Developed a full-stack recruitment platform using React.js, Express, and MongoDB Atlas.",
+        "Designed multi-role dashboards for Workers (profile upload), Employers (posting requirements), and Admins (placement verification).",
+        "Implemented secure JWT-based authentication, role-based authorization, and bcrypt password hashing.",
+        "Integrated Cloudinary SDK for secure, automated worker identity document uploads and cloud storage.",
+        "Built an automated placement workflow with system alerts and real-time database updates."
+      ]
+    }
   ];
 
   const nextSlide = () => {
@@ -462,6 +480,25 @@ export default function Projects() {
                               </svg>
                               <span>Source</span>
                             </a>
+                            {project.demoLink && project.demoLink !== "#" && (
+                              <a
+                                href={project.demoLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                }}
+                                className={`flex items-center gap-1.5 text-[9px] sm:text-xs font-mono text-neon-cyan hover:text-white transition-colors duration-300 font-bold bg-white/[0.04] border border-white/10 hover:border-neon-cyan/30 px-2 py-1 rounded ${isActive ? "pointer-events-auto" : "pointer-events-none"
+                                  }`}
+                              >
+                                <svg viewBox="0 0 24 24" className="w-2.5 h-2.5 fill-none stroke-current" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                  <polyline points="15 3 21 3 21 9" />
+                                  <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                <span>Demo</span>
+                              </a>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -662,6 +699,23 @@ export default function Projects() {
                   <span>Source Code</span>
                   <ArrowRight size={10} />
                 </a>
+                {selectedProject.demoLink && selectedProject.demoLink !== "#" && (
+                  <a
+                    href={selectedProject.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="px-3.5 py-1.5 rounded border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] hover:border-neon-cyan/30 text-neon-cyan hover:text-white transition-all duration-300 font-mono text-[10px] sm:text-xs font-bold inline-flex items-center gap-1.5"
+                  >
+                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    <span>Live Demo</span>
+                    <ArrowRight size={10} />
+                  </a>
+                )}
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Stats from "./components/Stats";
 import Certifications from "./components/Certifications";
+import Achievements from "./components/Achievements";
 import Footer from "./components/Footer";
 import AIChatbot from "./components/AIChatbot";
 import Loader from "./components/Loader";
@@ -89,7 +90,14 @@ export default function App() {
           {/* Statistics Metric Section */}
           <Stats />
 
+          {/* Section Divider Line */}
+          <div className="max-w-[1700px] mx-auto h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
 
+          {/* Achievements Section */}
+          <Achievements />
+
+          {/* Section Divider Line */}
+          <div className="max-w-[1700px] mx-auto h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
 
           {/* Certifications Section */}
           <Certifications />

@@ -69,6 +69,10 @@ export default function AIChatbot() {
     {
       keywords: ["simulation", "forage", "bcg", "deloitte", "aws apac"],
       answer: "Indrajith has completed 3 virtual simulations via Forage:\n1. BCG: Developed an AI-powered financial chatbot using Python & Pandas.\n2. Deloitte Australia: Designed Tableau business dashboards and data analytics logs.\n3. AWS APAC: Designed scalable cloud deployments using AWS Elastic Beanstalk."
+    },
+    {
+      keywords: ["achievement", "achievements", "paper", "papers", "research", "publication", "publications", "published"],
+      answer: "Indrajith has published 2 research papers in reputable international journals:\n\n1. \"Artificial Intelligence in Auditing: Transforming the Future of Accounting\" (IJIREM, 2026)\n• Focuses on ML-based anomaly detection systems using Random Forest to automate auditing and minimize fraud detection time for Indian SMEs.\n• View abstract: https://doi.org/10.55524/ijirem.2026.13.2.13\n\n2. \"Edge Computing in Oceanographic Research and Marine Technology: Revolutionizing Real-Time Data Processing and Decision-Making\" (IIJSR, 2025)\n• Focuses on low-latency edge computing configurations on marine sensors/buoys to resolve connectivity challenges and optimize bandwidth in harsh ocean environments.\n• View PDF: https://iijsr.com/data/uploads/84361.pdf"
     }
   ];
 
